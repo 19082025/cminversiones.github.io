@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mi Sitio — Página de Inicio</title>
+  <meta name="description" content="Sitio web básico, rápido y gratuito listo para publicar en GitHub Pages, Netlify o Vercel." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="container">
+    <nav class="nav">
+      <a class="logo" href="/">MiSitio</a>
+      <div class="links">
+        <a href="/">Inicio</a>
+        <a href="about.html">Quiénes somos</a>
+        <a href="contact.html">Contacto</a>
+      </div>
+    </nav>
+    <section class="hero">
+      <h1>Tu presencia web, gratis y en minutos</h1>
+      <p>Cambia estos textos por los de tu marca. Este starter funciona en <strong>GitHub Pages</strong>, <strong>Netlify</strong> o <strong>Vercel</strong> con tu dominio de GoDaddy.</p>
+      <a class="btn" href="about.html">Empezar</a>
+    </section>
+  </header>
+
+  <main class="container grid">
+    <section class="card">
+      <h2>Comunicacym</h2>
+      <p>Describe aquí el primer emprendimiento: servicios, beneficios y formas de contacto.</p>
+      <a class="link" href="about.html#comunicacym">Ver más</a>
+    </section>
+    <section class="card">
+      <h2>CMI Inversiones</h2>
+      <p>Describe aquí el segundo emprendimiento: proyectos, oportunidades de inversión y testimonios.</p>
+      <a class="link" href="about.html#cmi">Ver más</a>
+    </section>
+    <section class="card">
+      <h2>Blog / Novedades</h2>
+      <p>Publica consejos, noticias o actualizaciones de tus proyectos para atraer clientes.</p>
+      <a class="link" href="#">Ir al blog</a>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <small>© <span id="year"></span> Tu Marca — Hecho con un starter estático.</small>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

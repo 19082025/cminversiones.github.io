@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contacto</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="container">
+    <nav class="nav">
+      <a class="logo" href="/">MiSitio</a>
+      <div class="links">
+        <a href="/">Inicio</a>
+        <a href="about.html">Quiénes somos</a>
+        <a class="active" href="contact.html">Contacto</a>
+      </div>
+    </nav>
+    <section class="hero small">
+      <h1>Contacto</h1>
+      <p>Completa tus datos o agrega tu WhatsApp y correo.</p>
+    </section>
+  </header>
+
+  <main class="container content">
+    <p>Puedes escribir a <a href="mailto:contacto@tudominio.com">contacto@tudominio.com</a> o a nuestro WhatsApp.</p>
+    <form class="form" name="contacto" method="post" data-netlify="true">
+      <input type="hidden" name="form-name" value="contacto" />
+      <label>Nombre<input type="text" name="nombre" required></label>
+      <label>Email<input type="email" name="email" required></label>
+      <label>Mensaje<textarea name="mensaje" rows="5" required></textarea></label>
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+  </main>
+
+  <footer class="container footer">
+    <small>© <span id="year"></span> Tu Marca — Hecho con un starter estático.</small>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
